@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!-- <h1>Hare Krishna From HTML!</h1>  #COMMENT_01:This line provides an H1 heading from the html file  -->
+    </div>
+    <!-- <script>
+      const heading = document.createElement("h1");                 #COMMENT_05: This is replcaed by the js file from app.js
+      heading.innerHTML = "Hare Krishna from Js within Html file";
+
+      const rr = document.getElementById("root");
+      rr.appendChild(heading);
+    </script> -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- <script>
+      const cdnHeading = React.createElement(          #COMMENT_02: React.creatElement gives a JS object
+        "h1",                                          #COMMENT_03: Injecting React using cdn links is not a good method
+        {},                                            #COMMENT_04: root.render method inserts the react object into the html file
+        "Hare Krishna from React via CDN links within HTML file"
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(cdnHeading);
+    </script> -->
+    <script src="./App.js"></script>
+  </body>
+</html>
